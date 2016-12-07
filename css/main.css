@@ -1,0 +1,19 @@
+body {
+  color:#333;
+}
+div {
+  color:green;
+}
+div#right_bottom_box {
+  color:cyan;
+  font-size:1.2em;
+}
+div#right_bottom_box:hover {
+color:magenta;
+}
+a {
+  color:brown;
+}
+a:hover{
+  color:red;
+}
