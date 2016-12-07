@@ -1,0 +1,21 @@
+/*header class for main page*/
+.header {
+	background:url(../images/header-index.jpg) repeat left top;
+  height:150px;
+	padding:50px 0 0 200px;
+  }
+
+.header h1{
+	font-size:32px;
+	color:#ffffff;
+	margin:0px;
+	padding:0px 0px 10px;
+}
+
+.header p{
+	font-size:16px;
+	margin-left:1px;
+	color:#ffffff;
+}
+
+/*header end*/

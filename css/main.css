@@ -1,14 +1,23 @@
+/* total reset*/
+* {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+ }
+
 body {
   color:#333;
 }
 div {
   color:green;
 }
-div#right_bottom_box {
+.right_bottom_box {
   color:cyan;
   font-size:1.2em;
 }
-div#right_bottom_box:hover {
+.right_bottom_box:hover {
 color:magenta;
 }
 a {
