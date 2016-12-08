@@ -4,3 +4,28 @@ body {
 div {
   color:orange;
 }
+.bg-block1 {
+	background:url(../images/header-index.jpg) repeat left top;
+  background-attachment: fixed;
+  padding:50px 0 0 30px;
+  }
+.services {
+  background: #fff;
+  padding: 1px;
+}
+.pricing-table {
+  margin: 50px auto;
+  width: 892px;
+  text-align: center;
+}
+.pricing-table caption{
+  font-size: 2.5em;
+  }
+.pricing-table .plan {
+      background: #fff;
+      border: 1px solid #ddd;
+      color: #333;
+  	text-shadow: 0 1px rgba(255,255,255,.8);
+      padding: 20px;
+      width: 180px;
+  }
