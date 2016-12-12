@@ -1,3 +1,7 @@
 h1 {
   color:orange;
 }
+span { background-color: blue; }
+div>span {
+  background-color:#f12390;
+}
