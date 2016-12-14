@@ -1,19 +1,54 @@
 /* total reset*/
-html,body,ul,h1,h2 {
+html,body,ul,h1,h2,div {
   margin:0;
   padding:0;
   border:0;
   outline:0;
-  font-size:1em;
+  font-size:1rem;
  }
-
+/*body general settings*/
 body {
   font-family: Arial, Helvetica, sans-serif;
-
 }
 body {
   color:green;
 }
+/*navigaion menu*/
+.top_nav_menu {
+      width: 100%;
+      vertical-align: middle;
+      background-color: rgb(68, 156, 244);
+      text-align: center;
+      text-transform: uppercase;
+      position: fixed;
+      z-index: 100;
+    }
+.top_nav_menu_elements {
+      display: inline-block;
+      margin-left: 1.5%;
+      margin-top: 3px;
+      margin-bottom: 3px;
+    }
+.top_nav_menu_elements:first-child {
+      vertical-align: middle;
+}
+.top_nav_menu_elements:first-child+.top_nav_menu_elements{
+      margin-left: 0.5%;
+}
+.top_nav_menu a {
+      display: block;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px solid rgba(255, 255, 255, 0);
+      border-radius: 8px;
+      padding: 1px 5px;
+    }
+.top_nav_menu a:hover {
+      border-color: rgb(255, 255, 255);
+    }
+    /*navigaion menu end*/
+
 .right_bottom_box {
   color:cyan;
   font-size:1.2em;

@@ -1,4 +1,4 @@
-/*page-header class for main page*/
+/*page-header classes*/
 .page_header {
   height:70vh;
 	background-image:url(../images/header-index.jpg);
@@ -8,54 +8,69 @@
   white-space: nowrap;
   color: rgb(255, 255, 255);
     }
-    /*page_top_menu class*/
-
-.top_nav_menu {
-      width: 100%;
-      vertical-align: middle;
-      background-color: rgb(15, 140, 255);
-      text-align: center;
-      text-transform: uppercase;
-      position: fixed;
-      z-index: 100;
-    }
-.top_nav_menu_elements {
-      display: inline-block;
-      margin-left: 2%;
-      margin-top: 3px;
-      margin-bottom: 3px;
-    }
-.top_nav_menu a {
-      font-weight: bold;
-      text-decoration: none;
-      color: rgb(255, 255, 255);
-    }
-.top_nav_menu a:hover {
-      color: rgb(255, 230, 0);
-    }
-
-.page_header>h1{
+/*banner text and buttons*/
+.banner_text_block {
+   position: absolute;
+   padding: 1% 2%;
+   left: 21%;
+   top: 6%;
+   white-space: nowrap;
+   border-radius: 30px;
+   background-color: rgba(255, 255, 255, 0.35);
+}
+.banner_text_block>h1{
   position: relative;
   font-size: 2.5em;
   font-family: Helvetica, Arial, sans-serif;
   color: rgb(15, 140, 255);
-  padding-top: 3%;
-  left:25%;
+  top: -0.43em;
 }
-
-.page_header>h2{
+.banner_text_block>h2{
   position: relative;
   font-size:1.5em;
   font-family: "Comic Sans MS", Arial, sans-serif;
   text-shadow: 1px 1px rgb(80, 80, 80);
-  left:28%;
+  top: -1em;
+  left:17%;
 }
-.banner_buttons {
+.banner_buttons_block {
   position: relative;
-  left:30%;
-  padding-top: 1%;
+  left: 1%;
+  top: -0.5em;
+  text-align: center;
 }
-.banner_buttons>li {
+.banner_buttons_block>li {
   display: inline-block;
+}
+.banner_buttons_block>li:first-child {
+  margin-right: 10%;
+}
+.banner_button {
+  display: block;
+  vertical-align: middle;
+  color: rgb(255, 255, 255);
+  font-family: "Comic Sans MS", Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+  min-width: 10em;
+  border: 3px solid rgb(137, 222, 0);
+  border-radius: 10px;
+  padding: 1% 0;
+  background-color: rgb(68, 156, 244);
+}
+.banner_button:hover {
+  border-color: rgb(255, 255, 255);
+}
+.banner_button:active {
+  color: rgb(68, 156, 244);
+  border-color: rgb(137, 222, 0);
+  background-color: rgb(255, 255, 255);
+}
+.banner_button.second:active {
+  color: rgb(255, 255, 255);
+  border-color: rgb(137, 222, 0);
+  background-color: rgb(137, 222, 0);
 }
 /*header classes end*/
