@@ -1,5 +1,7 @@
-/* total reset*/
-html,body,ul,h1,h2,div {
+@import url(../font-awesome/css/font-awesome.min.css);
+
+/* pre-reset*/
+html,body,ul,h1,h2,h3,div {
   margin:0;
   padding:0;
   border:0;
@@ -9,9 +11,6 @@ html,body,ul,h1,h2,div {
 /*body general settings*/
 body {
   font-family: Arial, Helvetica, sans-serif;
-}
-body {
-  color:green;
 }
 /*navigaion menu*/
 .top_nav_menu {
@@ -35,8 +34,10 @@ body {
 .top_nav_menu_elements:first-child+.top_nav_menu_elements{
       margin-left: 0.5%;
 }
+.top_nav_menu_elements:last-child {
+      margin-left: 5%;
+    }
 .top_nav_menu a {
-      display: block;
       color: rgb(255, 255, 255);
       font-weight: bold;
       text-decoration: none;
@@ -47,12 +48,52 @@ body {
 .top_nav_menu a:hover {
       border-color: rgb(255, 255, 255);
     }
-    /*navigaion menu end*/
+/*navigaion menu end*/
 
-.right_bottom_box {
-  color:cyan;
-  font-size:1.2em;
+/*footer all pages*/
+footer {
+  color: rgb(255, 255, 255);
+  margin-top: 3em;
+  text-align: center;
+  background-color: rgb(25, 25, 25)
 }
-.right_bottom_box:hover {
-color:magenta;
+.footer_3column>p {
+  text-transform: uppercase;
+  font-weight: bold;
 }
+.footer_3column {
+  width: 25%;
+  display: inline-block;
+  margin: 1.5em auto 0.5em;
+}
+.footer_3column>ul>li {
+  list-style: none;
+}
+.footer_3column a {
+  text-decoration: none;
+  color: rgb(150, 150, 150);
+}
+.footer_3column a:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+footer>p {
+  margin-top: 2em;
+  padding-right: 9%;
+}
+footer>ul {
+  position: relative;
+  top: -3em;
+  padding-left: 11%;
+}
+.social_buttons {
+  display: inline-block;
+}
+.social_buttons>a {
+color: rgb(150, 150, 150);
+font-size: 2em;
+}
+.social_buttons>a:hover {
+color: rgb(255, 255, 255);
+}
+/*footer end*/

@@ -1,7 +1,7 @@
 /*page-header classes*/
 .page_header {
   height:70vh;
-	background-image:url(../images/header-index.jpg);
+  background-image:url(../images/header-index.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -13,7 +13,7 @@
    position: absolute;
    padding: 1% 2%;
    left: 21%;
-   top: 6%;
+   top: 7%;
    white-space: nowrap;
    border-radius: 30px;
    background-color: rgba(255, 255, 255, 0.35);
@@ -23,14 +23,14 @@
   font-size: 2.5em;
   font-family: Helvetica, Arial, sans-serif;
   color: rgb(15, 140, 255);
-  top: -0.43em;
+  top: -0.2em;
 }
 .banner_text_block>h2{
   position: relative;
   font-size:1.5em;
   font-family: "Comic Sans MS", Arial, sans-serif;
   text-shadow: 1px 1px rgb(80, 80, 80);
-  top: -1em;
+  top: -0.7em;
   left:17%;
 }
 .banner_buttons_block {
