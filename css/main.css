@@ -78,13 +78,12 @@ footer {
   color: rgb(255, 255, 255);
 }
 footer>p {
+  display: inline-block;
   margin-top: 2em;
-  padding-right: 9%;
+  margin-right: 2em;
 }
 footer>ul {
-  position: relative;
-  top: -3em;
-  padding-left: 11%;
+  display: inline-block;
 }
 .social_buttons {
   display: inline-block;

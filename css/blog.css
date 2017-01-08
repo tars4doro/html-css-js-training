@@ -1,6 +1,6 @@
 /*page-header classes*/
 .page_header {
-  height:70vh;
+  height:50vh;
   background-image:url(../images/header-blog.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,19 +18,16 @@
      background-color: rgba(0, 0, 0, 0.35);
   }
 .banner_text_block>h1{
-    position: relative;
     font-size: 2.5em;
     font-family: Helvetica, Arial, sans-serif;
     color: rgb(15, 140, 255);
-    top: -0.2em;
+    text-align: center;
   }
 .banner_text_block>h2{
-    position: relative;
     font-size:1.5em;
     font-family: "Comic Sans MS", Arial, sans-serif;
     text-shadow: 1px 1px rgb(80, 80, 80);
-    top: -0.4em;
-    left:5%;
+    text-align: center;
   }
 /*main container*/
 main {
