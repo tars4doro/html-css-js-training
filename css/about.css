@@ -46,9 +46,10 @@
 }
 .tabs>ul {
   display: inline-block;
-  width: 10%;
+  width: 15%;
   vertical-align: top;
   margin-top: 1.5em;
+  margin-right: 0.3em;
 }
 .tabs>ul>li {
   margin: 0 0.5em;
@@ -73,7 +74,7 @@
 }
 .tabs_member_info {
   display: none;
-  width: 88%;
+  width: 80%;
   border: 2px solid rgb(15, 140, 255);
   border-radius: 1em;
   overflow: auto;
