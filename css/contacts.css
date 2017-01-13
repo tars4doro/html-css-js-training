@@ -30,3 +30,69 @@
     text-align: center;
   }
   /*CONTACT FORM*/
+form {
+  width: 75%;
+  margin: 2em auto 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: rgb(178, 217, 252);
+  border-radius: 2em;
+}
+fieldset {
+  height: 10em;
+  vertical-align: top;
+  display: inline-block;
+  width: 43%;
+  margin: 0.3% 0;
+  border: 0;
+  padding: 0;
+  text-align: right;
+}
+textarea {
+  width: 47%;
+  resize: none;
+  height: 9.8em;
+  vertical-align: top;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: left;
+  margin: 0.3% 0.5%;
+  padding: 0.2em 0.2em;
+}
+fieldset>input {
+  font-family: inherit;
+  font-size: inherit;
+  width: 70%;
+  height: 1.5em;
+  margin-bottom: 0.4em;
+  margin-right: 1em;
+  padding-left: 0.2em;
+}
+textarea, fieldset>input {
+  border: 0.1em solid rgb(15, 140, 255);
+  color: rgb(15, 140, 255);
+  border-radius: 0.3em;
+  box-shadow: 0;
+  transition: box-shadow 0.4s ease-in-out;
+}
+textarea:focus, fieldset>input:focus {
+  box-shadow: 0 0 0.3em rgb(15, 140, 255);
+}
+input[type="submit"] {
+  font-family: inherit;
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 40%;
+  height: 2em;
+  margin-left: 25%;
+  margin-top: 0.4em;
+  border: 0.2em solid rgb(15, 140, 255);
+  border-radius: 0.3em;
+  background-color: rgb(15, 140, 255);
+  color: rgb(255, 255, 255);
+}
+input[type="submit"]:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(15, 140, 255);
+  cursor: pointer;
+}

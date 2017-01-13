@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rainbow Toys Contacts</title>
-  <meta name="description" content="test contacts page for QALight">
-  <meta name="keywords" content="contacts, adress, phone number, email">
+  <meta name="description" content="rainbow toys contacts test page for QALight">
+  <meta name="keywords" content="rainbow toys contacts,rainbow toys adress,rainbow toys phone number,rainbow toys email">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/contacts.css" rel="stylesheet">
 </head>
@@ -13,16 +13,19 @@
 
 
   <header class="page_header">
-
     <nav class="top_nav_menu">
+      <div>
+      <label for="menu_button"><i class="fa fa-bars" aria-hidden="true"></i></label>
+      <input id="menu_button" type="checkbox">
+      <span>Rainbow Toys Logo</span>
       <ul>
-        <li class="top_nav_menu_elements"><img src="images/menu-symbol.png" alt="menu-icon"></li>
         <li class="top_nav_menu_elements"><a href="index.html">Home</a></li>
         <li class="top_nav_menu_elements"><a href="blog.html">Blog</a></li>
         <li class="top_nav_menu_elements"><a href="about.html">About</a></li>
         <li class="top_nav_menu_elements"><a href="contacts.html">Contacts</a></li>
-        <li class="top_nav_menu_elements"><a href="signup.html">Sign Up</a></li>
+        <li class="top_nav_menu_elements"><a href="signup.html">Log In</a></li>
       </ul>
+      </div>
     </nav>
 
     <div class="banner_text_block">
@@ -32,11 +35,18 @@
 
   </header>
 <!-- contact form -->
-<main class="contact_form">
-  <form class="" action="index.html" method="post">
-
+<main>
+  <form action="#" method="post">
+    <fieldset>
+      <input type="text" name="fname" required placeholder="Your first name"><br>
+      <input type="text" name="lname" required placeholder="Your last name"><br>
+      <input type="tel" name="phone" placeholder="Your phone number"><br>
+      <input type="email" name="email" required placeholder="Your e-mail"><br>
+      <input type="text" name="subject" placeholder="Subject of your message"><br>
+    </fieldset>
+    <textarea name="message" maxlength="500" required placeholder="Your message (500 letters max)"></textarea><br>
+    <input type="submit" value="Send">
   </form>
-
 </main>
 
   <footer>

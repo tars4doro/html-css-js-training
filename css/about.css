@@ -169,6 +169,7 @@
   margin: 2% auto;
 }
 .radio_buttons_gallery input {
+  position: absolute;
   visibility: hidden;
 }
 .radio_buttons_gallery label img {

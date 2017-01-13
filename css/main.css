@@ -1,7 +1,7 @@
 @import url(../font-awesome/css/font-awesome.min.css);
 
 /* pre-reset*/
-html,body,ul,h1,h2,h3,div {
+html,body,ul,h1,h2,h3,h4,div {
   margin:0;
   padding:0;
   border:0;
@@ -11,31 +11,58 @@ html,body,ul,h1,h2,h3,div {
 /*body general settings*/
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: rgb(70, 70, 70);
 }
 /*navigaion menu*/
 .top_nav_menu {
       width: 100%;
+      min-height: 2em;
+      max-height: 2em;
       vertical-align: middle;
+      padding-top: 0.3em;
       background-color: rgb(68, 156, 244);
-      text-align: center;
+      text-align: left;
       text-transform: uppercase;
       position: fixed;
       z-index: 100;
+      color: rgb(255, 255, 255);
+      box-shadow: 0 0.1em 0.2em rgb(0,0,0);
     }
-.top_nav_menu_elements {
-      display: inline-block;
-      margin-left: 1.5%;
-      margin-top: 3px;
-      margin-bottom: 3px;
-    }
-.top_nav_menu_elements:first-child {
-      vertical-align: middle;
+.top_nav_menu>div {
+  width: 90vw;
 }
-.top_nav_menu_elements:first-child+.top_nav_menu_elements{
+.top_nav_menu ul {
+  display: inline-block;
+}
+.top_nav_menu_elements {
+      vertical-align: middle;
+      display: inline-block;
       margin-left: 0.5%;
+    }
+.top_nav_menu label {
+  position: absolute;
+  font-size: 1.3em;
+  margin-left: 0.2em;
+  display: none;
+}
+.top_nav_menu label:hover {
+  cursor: pointer;
+}
+.top_nav_menu input {
+  display: none;
+}
+.top_nav_menu span {
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Comic Sans MS";
+  margin-right: 25%;
+  margin-left: 2em;
+}
+.top_nav_menu span:hover {
+  cursor: default;
 }
 .top_nav_menu_elements:last-child {
-      margin-left: 5%;
+      margin-left: 10%;
     }
 .top_nav_menu a {
       color: rgb(255, 255, 255);
@@ -48,12 +75,54 @@ body {
 .top_nav_menu a:hover {
       border-color: rgb(255, 255, 255);
     }
+@media screen and (max-width:850px) {
+  .top_nav_menu ul {
+    position: relative;
+    display: block;
+    width: 8em;
+    height: 100vh;
+    padding-top: 4em;
+    background-color: rgb(68, 156, 244);
+    left: -8em;
+    transition: left 0.3s ease-in-out;
+    /*transform: translateX(-8em);
+    transition: transform 0.3s ease-in-out;*/
+
+  }
+  .top_nav_menu_elements {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 4em;
+        padding-left: 0.3em;
+      }
+  .top_nav_menu_elements:last-child {
+        margin-left: 0%;
+      }
+
+  .top_nav_menu label {
+    display: inline;
+  }
+  .top_nav_menu_elements span {
+    margin-right: 0;
+  }
+  .top_nav_menu_elements {
+    padding-bottom: 0.5em;
+    border-bottom: 0.1em solid rgb(255, 255, 255);
+  }
+  .top_nav_menu a {
+    border: 0;
+  }
+  .top_nav_menu input:checked~ul {
+   left: 0;
+   /*transform: translateX(0);*/
+  }
+}
 /*navigaion menu end*/
 
 /*footer all pages*/
 footer {
   color: rgb(255, 255, 255);
-  margin-top: 3em;
+  margin-top: 2em;
   text-align: center;
   background-color: rgb(25, 25, 25)
 }

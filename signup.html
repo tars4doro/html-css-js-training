@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in | Sign up page</title>
+  <meta name="description" content="test authentication page for QALight">
+  <meta name="keywords" content="log in, sign up">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/signup.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="top_nav_menu">
+    <div>
+      <label for="menu_button"><i class="fa fa-bars" aria-hidden="true"></i></label>
+      <input id="menu_button" type="checkbox">
+      <span>Rainbow Toys Logo</span>
+      <ul>
+        <li class="top_nav_menu_elements"><a href="index.html">Home</a></li>
+        <li class="top_nav_menu_elements"><a href="blog.html">Blog</a></li>
+        <li class="top_nav_menu_elements"><a href="about.html">About</a></li>
+        <li class="top_nav_menu_elements"><a href="contacts.html">Contacts</a></li>
+        <li class="top_nav_menu_elements"><a href="signup.html">Log In</a></li>
+      </ul>
+    </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <div id="login" class="fixed_tab_anchors"></div>
+    <div id="signup" class="fixed_tab_anchors"></div>
+    <a href="#login">Log In</a>
+    <a href="#signup">Sign Up</a>
+
+    <form action="#" method="post">
+      <label>Your Email<br><input type="email" name="email" required placeholder="example: login@some.com"></label><br>
+      <label>Your Password<br><input type="password" name="password" required placeholder="example: mYP4ssw0rD"></label><br>
+      <input type="submit" value="LOG IN">
+    </form>
+    <form action="#" method="post">
+      <label>Name<br><input type="text" name="fname" required placeholder="Your first name"></label><br>
+      <label>Last Name<br><input type="text" name="lname" required placeholder="Your last name"></label><br>
+      <label>Your Email<br><input type="email" name="email" required placeholder="example: login@some.com"></label><br>
+      <label>Your Password<br><input type="password" name="password" required placeholder="example: mYP4ssw0rD"></label><br>
+      <input type="submit" value="JOIN!">
+    </form>
+
+  </main>
+</body>
+</html>

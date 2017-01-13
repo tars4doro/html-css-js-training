@@ -1,0 +1,88 @@
+body {
+  white-space: nowrap;
+
+}
+.fixed_tab_anchors {
+  position: fixed;
+  top 0;
+  right 0;
+  }
+main {
+  position: relative;
+  top: 10em;
+  margin: 0 auto;
+  width: 33%;
+  height: 27em;
+  background-color: rgb(66, 160, 246);
+  border: 1em solid rgb(15, 140, 255);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+main>a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  margin: 1em 5%;
+  padding: 0.1em 0.3em;
+  border: 0.1em solid rgb(255, 255, 255);
+  border-radius: 0.7em;
+}
+.fixed_tab_anchors:last-of-type:not(:target)~a:first-of-type,
+.fixed_tab_anchors:first-of-type:target~a:first-of-type,
+.fixed_tab_anchors:last-of-type:target~a:last-of-type {
+  background-color: rgb(255, 255, 255);
+  color: rgb(15, 140, 255);
+  transition: background-color 0.2s ease-in-out;
+}
+main>a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+main>form {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  z-index: -5;
+}
+.fixed_tab_anchors:last-of-type:not(:target)~form:first-of-type,
+.fixed_tab_anchors:first-of-type:target~form:first-of-type,
+.fixed_tab_anchors:last-of-type:target~form:last-of-type {
+  z-index: 1;
+}
+form>label {
+  font-weight: bold;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+form>label>input {
+  font-family: inherit;
+  font-weight: bold;
+  color: rgb(15, 140, 255);
+  width:50%;
+  height:2em;
+  font-size: 1em;
+  padding-left: 0.7em;
+  border: 0.1em solid rgb(255, 255, 255);
+  border-radius: 0.7em;
+  margin-bottom: 0.2em;
+}
+form>input[type="submit"] {
+  font-family: inherit;
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 40%;
+  height: 2em;
+  margin-top: 1em;
+  border: 0.1em solid rgb(255, 255, 255);
+  border-radius: 0.7em;
+  background-color: inherit;
+  color: rgb(255, 255, 255);
+}
+form>input[type="submit"]:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(15, 140, 255);
+  cursor: pointer;
+}

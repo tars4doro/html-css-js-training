@@ -1,10 +1,11 @@
 /*page-header classes*/
 .page_header {
-  height:70vh;
+  height:85vh;
   background-image:url(../images/header-index.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-attachment: fixed;
   white-space: nowrap;
   color: rgb(255, 255, 255);
     }
@@ -13,7 +14,7 @@
    position: absolute;
    padding: 1% 2%;
    left: 21%;
-   top: 7%;
+   top: 25%;
    white-space: nowrap;
    border-radius: 30px;
    background-color: rgba(255, 255, 255, 0.35);
@@ -69,23 +70,131 @@
   background-color: rgb(137, 222, 0);
 }
 /*header classes end*/
-.services {
-  background: #fff;
-  padding: 1px;
+/*<main> styling*/
+main {
+  width: 100%;
 }
-.pricing-table {
-  margin: 50px auto;
-  width: 892px;
+.landing_article {
+  padding: 5% 12.5%;
+  height: 50vh;
+  text-align: center;
+  font-size: 1.3em;
+  overflow: hidden;
+}
+.landing_article>h2, .landing_article>h3  {
+  text-transform: uppercase;
+  font-family: "Comic Sans MS";
+  font-size: 1.8em;
+  font-weight: 600;
+  color: rgb(15, 140, 255);
+  text-shadow: 0.1em 0.1em 0.2em rgb(101, 101, 101);
+}
+.landing_article>p {
+  margin: 7% 0;
+}
+.parallax, .article2, .article3, .article4 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-blend-mode: screen;
+}
+.parallax {
+  height: 100vh;
+}
+.parallax>h4 {
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 2em;
+  color: rgb(15, 140, 255);
+  text-shadow: 0 0 0.2em rgb(101, 101, 101);
+}
+.article1 {
+  height: 30vh;
+}
+.article1>h2 {
+  font-size: 2.2em;
+}
+
+.article2 {
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image:url(../images/landing1.jpg);
+  color: rgb(255, 255, 255);
+  background-color: rgba(148, 146, 0, 0.2);
+}
+.parallax:nth-of-type(1) {
+  background-image:url(../images/landing3.jpg);
+}
+.article3 {
+  height: 80vh;
+  background-image:url(../images/landing2.jpg);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.parallax:nth-of-type(2) {
+  background-image:url(../images/landing4.jpg);
+}
+.article4 {
+  height: 80vh;
+  background-image:url(../images/landing5.jpg);
+  background-color: rgba(10, 240, 255, 0.2);
+}
+.parallax:nth-of-type(3) {
+  background-image:url(../images/landing1.jpg);
+}
+.article5 {
+  height: 40vh;
+}
+.article5>form>input[type="email"] {
+  border: 0.1em solid rgb(15, 140, 255);
+  color: rgb(15, 140, 255);
+  font-family: inherit;
+  font-size: 1.1em;
+  padding-left: 0.5em;
+  border-radius: 0.3em;
+  width: 30%;
+  height: 1.6em;
+  box-shadow: 0;
+  transition: box-shadow 0.4s ease-in-out;
+}
+.article5>form>input[type="email"]:focus {
+  box-shadow: 0 0 0.4em rgb(15, 140, 255);
+}
+.article5>form>input[type="submit"] {
+  font-family: inherit;
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 10%;
+  height: 1.5em;
+  margin-left: 5%;
+  border: 0.2em solid rgb(15, 140, 255);
+  border-radius: 0.4em;
+  background-color: rgb(15, 140, 255);
+  color: rgb(255, 255, 255);
+}
+.article5>form>input[type="submit"]:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(15, 140, 255);
+  cursor: pointer;
+}
+.products {
+  background-color: rgb(214, 235, 255);
+  padding: 3em 0;
+}
+.products>ul {
   text-align: center;
 }
-.pricing-table caption{
-  font-size: 2.5em;
-  }
-.pricing-table .plan {
-      background: #fff;
-      border: 1px solid #ddd;
-      color: #333;
-  	text-shadow: 0 1px rgba(255,255,255,.8);
-      padding: 20px;
-      width: 180px;
-  }
+.products>ul>li {
+  display: inline-block;
+  width: 25%;
+}
+.products>ul>li>i {
+  font-size: 5em;
+  color: rgb(15, 140, 255);
+}
+.products>ul>li>h4 {
+  text-transform: capitalize;
+  margin: 2em 0;
+}
+.offer_table {
+  margin: 2em auto; 
+}
