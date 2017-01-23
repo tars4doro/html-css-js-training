@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>tab creation</title>
+    <style media="screen">
+       fieldset {
+         font-size: 0.9em;
+         margin-bottom: 2em;
+       }
+       caption {
+         width: 30em;
+         font-size: 1.5em;
+         font-weight: bold;
+       }
+       thead {
+         background-color: rgb(27, 254, 180);
+         color: rgb(255, 255, 255);
+         font-weight: bold;
+       }
+       tfoot {
+         background-color: rgb(0, 0, 0);
+         color: rgb(255, 255, 255);
+       }
+       th, td {
+         width: 5em;
+       }
+       input {
+         background-color: inherit;
+         border: 0.1em solid rgb(0, 0, 0);
+         font-size: inherit;
+         font-weight: inherit;
+         color: inherit;
+         width: inherit;
+       }
+       .on_off {
+         display: none;
+       }
+    </style>
+  </head>
+  <body>
+<fieldset>
+  <legend>table parameters</legend>
+  <input type="text" placeholder="enter number of rows" value="">
+  <input type="text" placeholder="enter number of columns" value="">
+  <input id="go-go-go" type="button" value="submit">
+</fieldset>
+<table id="created_table" class="on_off">
+  <caption><input type="text" placeholder="*table name" value=""></caption>
+  <thead></thead>
+  <tfoot></tfoot>
+  <tbody></tbody>
+</table>
+
+<script>
+document.getElementById('go-go-go').onclick=function() {
+  var rows=document.body.firstElementChild.children[1].value;
+  var columns=document.body.firstElementChild.children[2].value;
+  if (isNaN(rows)||isNaN(columns)) {alert('you must enter integer numbers'); return;}
+    document.getElementById('created_table').children[1].appendChild(document.createElement('tr'));
+    document.getElementById('created_table').children[1].children[0].appendChild(document.createElement('th'));
+    document.getElementById('created_table').children[1].children[0].children[0].appendChild(document.createElement('input'));
+    document.getElementById('created_table').children[1].children[0].children[0].children[0].setAttribute('type','text');
+    for (var i=1; i<columns; i++) {
+    document.getElementById('created_table').children[1].children[0].appendChild(document.getElementById('created_table').children[1].children[0].children[0].cloneNode(true));
+  }
+    document.getElementById('created_table').children[2].appendChild(document.createElement('tr'));
+    document.getElementById('created_table').children[2].children[0].appendChild(document.createElement('td'));
+    document.getElementById('created_table').children[2].children[0].children[0].appendChild(document.createElement('input'));
+    document.getElementById('created_table').children[2].children[0].children[0].children[0].setAttribute('type','text');
+    for (i=1; i<columns; i++) {
+    document.getElementById('created_table').children[2].children[0].appendChild(document.getElementById('created_table').children[2].children[0].children[0].cloneNode(true));
+  }
+    document.getElementById('created_table').children[3].appendChild(document.createElement('tr'));
+    document.getElementById('created_table').children[3].children[0].appendChild(document.createElement('td'));
+    document.getElementById('created_table').children[3].children[0].children[0].appendChild(document.createElement('input'));
+    document.getElementById('created_table').children[3].children[0].children[0].children[0].setAttribute('type','text');
+    for (i=1; i<columns; i++) {
+      document.getElementById('created_table').children[3].children[0].appendChild(document.getElementById('created_table').children[3].children[0].children[0].cloneNode(true));
+  }
+
+  for (i=1; i<rows-2; i++) {
+    document.getElementById('created_table').children[3].appendChild(document.getElementById('created_table').children[3].children[0].cloneNode(true));
+  }
+  document.body.children[1].classList.toggle("on_off");
+};
+</script>
+  </body>
+</html>
