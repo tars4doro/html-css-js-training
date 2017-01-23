@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sieve of Eratosthenes</title>
+    <style media="screen">
+    input:first-of-type { width: 15em; }
+      .show {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="enter the limit integer number" value="">
+    <input type="button" value="submit">
+    <p class="show">all the prime numbers up to <b id="limit_number"></b> :<br></p>
+
+  <script>
+  document.body.children[1].onclick=function() {
+  var limitNumber=document.body.firstElementChild.value;
+  if (isNaN(limitNumber)) {alert('you must enter integer number'); return;}
+  document.getElementById('limit_number').innerHTML=limitNumber;
+  var startArray=[];
+  for (var i=2; i<=limitNumber; i++) {
+    startArray.push(i);}
+  var resultArray=[2];
+  var temporaryArray=[];
+  var p=startArray[0];
+  while (p<=limitNumber) {
+
+          for (i=0; i<startArray.length; i++) {
+          if (startArray[i]%p!==0) temporaryArray.push(startArray[i]);}
+
+    if (temporaryArray[0]) resultArray.push(temporaryArray[0]);
+    startArray=temporaryArray;
+    p=startArray[0];
+    temporaryArray=[];
+   }
+
+  document.body.children[2].innerHTML=resultArray.join(' ');
+    // document.body.children[2].innerHTML=resultArray.toString();
+  // for (i=0; i<resultArray.length;i++) {
+  // document.body.children[2].innerHTML=document.body.children[2].innerHTML+resultArray[i]+' ';}
+
+  document.body.children[2].classList.toggle("show");
+  };
+  </script>
+
+  </body>
+</html>

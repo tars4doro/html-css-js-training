@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ua|eng switcher</title>
+  </head>
+  <body>
+    <button value="UA" onclick="valueread(this)">UA</button>
+    <button value="ENG" onclick="valueread(this)">ENG</button><br>
+    <button value="0" onclick="valueread(this)">0</button>
+    <button value="1" onclick="valueread(this)">1</button>
+    <button value="2" onclick="valueread(this)">2</button>
+    <button value="3" onclick="valueread(this)">3</button>
+    <button value="4" onclick="valueread(this)">4</button>
+    <button value="5" onclick="valueread(this)">5</button>
+    <button value="6" onclick="valueread(this)">6</button>
+    <button value="7" onclick="valueread(this)">7</button>
+    <button value="8" onclick="valueread(this)">8</button>
+    <button value="9" onclick="valueread(this)">9</button>
+    <button value="10" onclick="valueread(this)">10</button>
+    <button value="11" onclick="valueread(this)">11</button>
+    <p></p>
+<script>
+var lang;
+var month;
+var monthUa=['січень','лютий','березень','квітень','травень','червень','липень','серпень','вересень','жовтень','листопад','грудень'];
+var monthEng=['january','february','march','april','may','june','july','august','september','october','november','december'];
+  function valueread (button) {
+  if (isNaN(button.value)) lang=button.value;
+  else month=button.value;
+  if ((lang)&&(month)) {
+  if (lang=='UA') document.body.children[15].innerHTML=monthUa[month];
+  else document.body.children[15].innerHTML=monthEng[month];}
+}
+</script>
+
+  </body>
+</html>
